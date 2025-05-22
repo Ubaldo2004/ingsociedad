@@ -126,33 +126,40 @@
     </div>
   </section>
 
-  <!-- Rueda de la Fortuna del Consumo -->
-  <section class="bg-white text-black py-12">
-    <div class="max-w-4xl mx-auto text-center mb-8">
-      <h2 class="text-3xl font-bold mb-4">La rueda de la fortuna del hiperconsumo</h2>
-      <p class="text-lg italic">
-        Giramos y giramos, creyendo que en la próxima vuelta encontraremos la felicidad.
-      </p>
-    </div>
+<!-- Sección carrera metafórica -->
+<section class="bg-white text-black py-12">
+  <div class="max-w-4xl mx-auto text-center mb-8">
+    <h2 class="text-3xl font-bold mb-4">¿Y si la vida fuera una carrera de F1?</h2>
+    <p class="text-lg italic">
+      Corremos rápido detrás del bienestar, del éxito, del placer... pero ¿alguna vez cruzamos la meta?
+    </p>
+  </div>
 
-    <div class="rueda-consumo animate-spin-slow" aria-label="Rueda de la fortuna del consumo">
-      <div class="top-center" role="img" aria-label="Bolsa de compras">🛍️</div>
-      <div class="right-center" role="img" aria-label="Teléfono móvil">📱</div>
-      <div class="bottom-center" role="img" aria-label="Hamburguesa">🍔</div>
-      <div class="left-center" role="img" aria-label="Isla tropical">🏝️</div>
-      <div class="top-left" role="img" aria-label="Zapatos deportivos">👟</div>
-      <div class="top-right" role="img" aria-label="Cosméticos">💄</div>
-      <div class="bottom-left" role="img" aria-label="Auriculares">🎧</div>
-      <div class="bottom-right" role="img" aria-label="Diamante">💎</div>
+  <!-- Simulación visual de una carrera de consumo -->
+  <div class="relative h-32 overflow-hidden bg-gray-200 rounded-xl mx-4">
+    <div class="absolute left-0 top-10 animate-marquee whitespace-nowrap text-2xl font-bold">
+      🏎️💨💳🚀🏁💼🛍️📱🚗💨🔥🎯
     </div>
+  </div>
 
-    <div class="text-center mt-6 text-gray-700 max-w-3xl mx-auto px-6">
-      <p>
-        La rueda gira constantemente y promete satisfacción en cada ícono: moda, tecnología, viajes, comida rápida, lujo...
-        Pero una vez que creemos haber “ganado”, la rueda ya está girando de nuevo.
-      </p>
-    </div>
-  </section>
+  <style>
+    @keyframes marquee {
+      0%   { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .animate-marquee {
+      animation: marquee 12s linear infinite;
+    }
+  </style>
+
+  <div class="text-center mt-6 text-gray-600 max-w-3xl mx-auto">
+    <p>
+      En la era del hiperconsumo, todo se acelera: deseos, productos, emociones.  
+      Corremos en círculos como en una pista de F1, sin detenernos a preguntar si realmente somos más felices.
+    </p>
+  </div>
+</section>
 
   <!-- Texto de reflexión -->
   <section class="bg-gray-900 p-10 text-lg">
